@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Package Your Hexo</title>
+    <link href="/2023/03/18/package-hexo/"/>
+    <url>/2023/03/18/package-hexo/</url>
+    
+    <content type="html"><![CDATA[<!-- <script src="/js/modified.js"></script> --><script src="/js/dateUp.js"></script><h1 id="打包你的Hexo"><a href="#打包你的Hexo" class="headerlink" title="打包你的Hexo"></a>打包你的Hexo</h1><div class="note note-primary">            <p>最後的三行指令有誤，請看文末指令區</p>          </div><div class="note note-info">            <p>本篇參考網路上的大神</p>          </div><p>如果你有多部電腦共同使用，那這篇文章就可以教你如何用github在不同裝置上修改撰寫您的hexo。<br><a href="https://blog.csdn.net/K1052176873/article/details/122879462">這篇文章</a>有教學要如何使用原本hexo部署到github的repository，利用他的branch來存檔案。但我覺得這有些微的混亂，因此我認為新增一個repository也是個好方法。</p><div class="note note-info">            <p>先看完<a href="https://blog.csdn.net/K1052176873/article/details/122879462">那篇文</a>在我們再來繼續討論如何使用新的repository來儲存。</p>          </div><h2 id="部署到新的repository"><a href="#部署到新的repository" class="headerlink" title="部署到新的repository"></a>部署到新的repository</h2><p>因為hexo在init時所產生的gitignore正是我們需要的，所以步驟十分簡單，我們可以直接將整份hexo的資料夾push到repository，就完成啦！</p><h3 id="新電腦的pull"><a href="#新電腦的pull" class="headerlink" title="新電腦的pull"></a>新電腦的pull</h3><p>可以直接pull下來，在資料夾下按照那個網站後面所寫的指示打三個指令</p><div class="note note-primary">            <p>第一行指令有誤，此行無法使hexo 正常運行，修改成下面的指令</p>          </div><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#npm install hexo 這行指令有誤不要打</span><br>npm install hexo-cli -g<br>npm install<br>npm install hexo-deployer-git<br></code></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/K1052176873/article/details/122879462">那個網站</a>也有解釋為何這樣就行了，可以去參考看看。(他也有說要記住：不需要<code>hexo init</code>這個指令，不要打錯嘍！)</p><p>這樣就完成啦！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+      <tag>github</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
