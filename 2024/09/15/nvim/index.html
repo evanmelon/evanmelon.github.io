@@ -16,25 +16,31 @@
   <meta name="author" content="Evan Chang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="非常歡迎您光臨「西瓜的 Blog」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容： 一、隱私權保護政策的適用範圍隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結網站，也不適用於非本網站所委託或參與管理的人員。 二、個人資料的蒐集、處理及利用">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Privacy Policy">
-<meta property="og:url" content="https://blog.evanmelon.dev/PrivacyPolicy/index.html">
+    <meta name="description" content="很多人說vim只需要鍵盤就可以快速編輯，是一個熟悉後就可以快速邊寫文檔的有力工具，但上手難度也算是高。那nvim 是一個由vim 去改進的文字編輯器，常用於linux 系統的terminal。跟vim 比是可以去加上一些套件讓整個編輯器變得更加靈活。所以只要有能力nvim 甚至可以取代vscode 成為你有利的工具。以下連結就是我設定好的nvim config檔案。目前我會再進行更新，主要是參考">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nvim">
+<meta property="og:url" content="https://blog.evanmelon.dev/2024/09/15/nvim/index.html">
 <meta property="og:site_name" content="西瓜的 Blog">
-<meta property="og:description" content="非常歡迎您光臨「西瓜的 Blog」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容： 一、隱私權保護政策的適用範圍隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結網站，也不適用於非本網站所委託或參與管理的人員。 二、個人資料的蒐集、處理及利用">
+<meta property="og:description" content="很多人說vim只需要鍵盤就可以快速編輯，是一個熟悉後就可以快速邊寫文檔的有力工具，但上手難度也算是高。那nvim 是一個由vim 去改進的文字編輯器，常用於linux 系統的terminal。跟vim 比是可以去加上一些套件讓整個編輯器變得更加靈活。所以只要有能力nvim 甚至可以取代vscode 成為你有利的工具。以下連結就是我設定好的nvim config檔案。目前我會再進行更新，主要是參考">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2023-04-08T13:23:46.000Z">
-<meta property="article:modified_time" content="2024-03-15T14:57:09.228Z">
+<meta property="article:published_time" content="2024-09-15T15:31:34.000Z">
+<meta property="article:modified_time" content="2025-01-05T13:24:36.017Z">
 <meta property="article:author" content="Evan Chang">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Privacy Policy - 西瓜的 Blog</title>
+  <title>nvim - 西瓜的 Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -108,7 +114,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -238,9 +244,57 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Privacy Policy"></span>
+            <span id="subtitle" data-typed-text="nvim"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-09-15 15:31" pubdate>
+          2024年9月15日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          152 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          2 分鐘
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
 
         
       </div>
@@ -256,37 +310,172 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-<article class="page-content">
-  <p>非常歡迎您光臨「西瓜的 Blog」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：</p>
-<h3 id="一、隱私權保護政策的適用範圍"><a href="#一、隱私權保護政策的適用範圍" class="headerlink" title="一、隱私權保護政策的適用範圍"></a>一、隱私權保護政策的適用範圍</h3><p>隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結網站，也不適用於非本網站所委託或參與管理的人員。</p>
-<h3 id="二、個人資料的蒐集、處理及利用方式"><a href="#二、個人資料的蒐集、處理及利用方式" class="headerlink" title="二、個人資料的蒐集、處理及利用方式"></a>二、個人資料的蒐集、處理及利用方式</h3><p>• 當您造訪本網站或使用本網站所提供之功能服務時，我們將視該服務功能性質，請您提供必要的個人資料，並在該特定目的範圍內處理及利用您的個人資料；非經您書面同意，本網站不會將個人資料用於其他用途。<br>• 本網站在您使用服務信箱、問卷調查等互動性功能時，會保留您所提供的姓名、電子郵件地址、聯絡方式及使用時間等。<br>• 於一般瀏覽時，伺服器會自行記錄相關行徑，包括您使用連線設備的 IP 位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，決不對外公佈。<br>• 為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。<br>• 您可以隨時向我們提出請求，以更正或刪除本網站所蒐集您錯誤或不完整的個人資料。</p>
-<h3 id="三、資料之保護"><a href="#三、資料之保護" class="headerlink" title="三、資料之保護"></a>三、資料之保護</h3><p>• 本網站主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施，只由經過授權的人員才能接觸您的個人資料，相關處理人員皆簽有保密合約，如有違反保密義務者，將會受到相關的法律處分。<br>• 如因業務需要有必要委託其他單位提供服務時，本網站亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。</p>
-<h3 id="四、網站對外的相關連結"><a href="#四、網站對外的相關連結" class="headerlink" title="四、網站對外的相關連結"></a>四、網站對外的相關連結</h3><p>本網站的網頁提供其他網站的網路連結，您也可經由本網站所提供的連結，點選進入其他網站。但該連結網站不適用本網站的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。</p>
-<h3 id="五、與第三人共用個人資料之政策"><a href="#五、與第三人共用個人資料之政策" class="headerlink" title="五、與第三人共用個人資料之政策"></a>五、與第三人共用個人資料之政策</h3><p>本網站絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。<br>前項但書之情形包括不限於：<br>• 經由您書面同意。<br>• 法律明文規定。<br>• 為免除您生命、身體、自由或財產上之危險。<br>• 與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集者依其揭露方式無從識別特定之當事人。<br>• 當您在網站的行為，違反服務條款或可能損害或妨礙網站與其他使用者權益或導致任何人遭受損害時，經網站管理單位研析揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要者。<br>• 有利於您的權益。<br>• 本網站委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。</p>
-<h3 id="六、Cookie-之使用"><a href="#六、Cookie-之使用" class="headerlink" title="六、Cookie 之使用"></a>六、Cookie 之使用</h3><p>為了提供您最佳的服務，本網站會在您的電腦中放置並取用我們的 Cookie，若您不願接受 Cookie 的寫入，您可在您使用的瀏覽器功能項中設定隱私權等級為高，即可拒絕 Cookie 的寫入，但可能會導致網站某些功能無法正常執行 。</p>
-<h3 id="七、隱私權保護政策之修正"><a href="#七、隱私權保護政策之修正" class="headerlink" title="七、隱私權保護政策之修正"></a>七、隱私權保護政策之修正</h3><p>本網站隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於網站上。</p>
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">nvim</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <script src="/js/dateUp.js"></script>
+<p>很多人說vim只需要鍵盤就可以快速編輯，是一個熟悉後就可以快速邊寫文檔的有力工具，但上手難度也算是高。<br>那nvim 是一個由vim 去改進的文字編輯器，常用於linux 系統的terminal。跟vim 比是可以去加上一些套件讓整個編輯器變得更加靈活。<br>所以只要有能力nvim 甚至可以取代vscode 成為你有利的工具。<br>以下連結就是我設定好的nvim config檔案。目前我會再進行更新，主要是參考y一位outuber 再加上Chat GPT 完成的。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>nvim</div>
+      <div>https://blog.evanmelon.dev/2024/09/15/nvim/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Evan Chang</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>發布於</div>
+          <div>2024年9月15日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>許可協議</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="waline"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://lib.baomitu.com/waline/2.14.1/waline.min.css')
+      Fluid.utils.createScript('https://lib.baomitu.com/waline/2.14.1/waline.min.js', function() {
+        var options = Object.assign(
+          {"serverURL":"https://waline.evanmelon.dev/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":[],"lang":"en","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10,"reaction":["https://unpkg.com/@waline/emojis@1.1.0/alus/alus_thumbsup.png","https://unpkg.com/@waline/emojis@1.1.0/alus/alus_helpless.png","https://unpkg.com/@waline/emojis@1.1.0/alus/alus_wise.png","https://unpkg.com/@waline/emojis@1.1.0/alus/alus_pick_nose.png","https://unpkg.com/@waline/emojis@1.1.0/alus/alus_expressionless.png","https://unpkg.com/@waline/emojis@1.1.0/alus/alus_sob.png"],"locale":{"nick":"暱稱","nickError":"暱稱不能少於3個字","mail":"信箱","mailError":"請填寫正確的郵件地址","link":"網址","optional":"可選","placeholder":"說點什麼吧！","sofa":"來留言吧~","submit":"提交","like":"喜歡","cancelLike":"取消喜歡","reply":"回覆","cancelReply":"取消回覆","comment":"留言","refresh":"刷新","more":"加載更多...","preview":"預覽","emoji":"表情","uploadImage":"上傳圖片","seconds":"秒前","minutes":"分鐘前","hours":"小時前","days":"天前","now":"剛剛","uploading":"正在上傳","login":"登入","logout":"登出","admin":"博主","sticky":"置頂","word":"字","wordHint":"評論字數應在 $0 到 $1 字之間！\\n當前字數：$2","anonymous":"匿名","level0":"潜水","level1":"冒泡","level2":"吐槽","level3":"活跃","level4":"话痨","level5":"传说","gif":"表情包","gifSearchPlaceholder":"搜尋表情包","profile":"個人資料","approved":"通過","waiting":"待審核","spam":"垃圾","unsticky":"取消置頂","oldest":"按倒序","latest":"按正序","hottest":"按熱度","reactionTitle":"你認為這篇文章怎麼樣？"}},
+          {
+            el: '#waline',
+            path: window.location.pathname
+          }
+        )
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目錄</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
 
 
   
 
-</article>
+
+
+  
 
 
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -405,6 +594,99 @@
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script defer src="/js/leancloud.js" ></script>
 
