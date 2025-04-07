@@ -6,7 +6,7 @@
   <link href="https://blog.evanmelon.dev/atom.xml" rel="self"/>
   
   <link href="https://blog.evanmelon.dev/"/>
-  <updated>2025-04-07T15:34:14.216Z</updated>
+  <updated>2025-04-07T17:09:02.866Z</updated>
   <id>https://blog.evanmelon.dev/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.evanmelon.dev/2024/03/16/package-hexo/"/>
     <id>https://blog.evanmelon.dev/2024/03/16/package-hexo/</id>
     <published>2024-03-16T04:43:15.000Z</published>
-    <updated>2025-04-07T15:34:14.216Z</updated>
+    <updated>2025-04-07T17:09:02.866Z</updated>
     
     <content type="html"><![CDATA[<!-- <script src="/js/modified.js"></script> --><script src="/js/dateUp.js"></script><h1 id="打包你的Hexo"><a href="#打包你的Hexo" class="headerlink" title="打包你的Hexo"></a>打包你的Hexo</h1><p>如果你有多部電腦共同使用，那這篇文章就可以教你如何用 github 在不同裝置上修改撰寫您的 hexo。<br><a href="https://blog.csdn.net/K1052176873/article/details/122879462">這篇文章</a>有教學要如何使用原本 hexo 部署到 github 的 repository，利用他的 branch 來存檔案。但我覺得這有些微的混亂，因此我認為新增一個 repository 也是個好方法。</p><h2 id="部署到新的repository"><a href="#部署到新的repository" class="headerlink" title="部署到新的repository"></a>部署到新的repository</h2><p>因為 hexo 在 init 時所產生的 gitignore 正是我們需要的，所以步驟十分簡單，我們可以直接將整份 hexo 的資料夾 push 到 repository，就完成啦！</p><h2 id="新電腦的pull"><a href="#新電腦的pull" class="headerlink" title="新電腦的pull"></a>新電腦的pull</h2><p>可以直接 pull 下來，那當然要先安裝好<a href="https://nodejs.org/">Node.js</a>和<a href="https://git-scm.com/">git</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-cli -g<br>npm install<br></code></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/K1052176873/article/details/122879462">那篇文章</a>也有提到其實 <code>npm install</code> 是去下載文件中的 package.json 這個檔案裡面的 dependencies 所列出的所有套件。</p><p>網站作者也有說要記住：不需要 <code>hexo init</code> 這個指令，不要打錯嘍！</p><p>這樣就完成啦！</p>]]></content>
     
