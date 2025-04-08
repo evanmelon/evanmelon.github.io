@@ -16,12 +16,12 @@
   <meta name="author" content="Evan Chang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="No. 5 最長回文子字串Given a string s, return the longest palindromic substring in s.題目在這裡 Chat GPT提供了Manacher’s Algorithm的演算法這個演算法解決了偶數字串裏沒有中間數值的問題。 Problem:有不一樣數值的問題可以用新增空位元來處理？ 詳細的介紹看這個網站，他也有參考國外的網站，想看原文的也">
+    <meta name="description" content="No. 5 最長回文子字串 Given a string s, return the longest palindromic substring in s. 題目在這裡 Chat GPT提供了Manacher’s Algorithm的演算法 這個演算法解決了偶數字串裏沒有中間數值的問題。 Problem:有不一樣數值的問題可以用新增空位元來處理？ 詳細的介紹看這個網站，他也有參考國外的網站，想看原">
 <meta property="og:type" content="article">
 <meta property="og:title" content="No. 5">
 <meta property="og:url" content="https://blog.catoverload.dev/2023/03/06/leetcode5/index.html">
 <meta property="og:site_name" content="Evan 的 Blog">
-<meta property="og:description" content="No. 5 最長回文子字串Given a string s, return the longest palindromic substring in s.題目在這裡 Chat GPT提供了Manacher’s Algorithm的演算法這個演算法解決了偶數字串裏沒有中間數值的問題。 Problem:有不一樣數值的問題可以用新增空位元來處理？ 詳細的介紹看這個網站，他也有參考國外的網站，想看原文的也">
+<meta property="og:description" content="No. 5 最長回文子字串 Given a string s, return the longest palindromic substring in s. 題目在這裡 Chat GPT提供了Manacher’s Algorithm的演算法 這個演算法解決了偶數字串裏沒有中間數值的問題。 Problem:有不一樣數值的問題可以用新增空位元來處理？ 詳細的介紹看這個網站，他也有參考國外的網站，想看原">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://blog.catoverload.dev/2023/03/06/leetcode5/img/icon/pet_foot_print_DarkBlue.png">
 <meta property="article:published_time" content="2023-03-06T10:00:28.000Z">
@@ -75,7 +75,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"blog.catoverload.dev","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"0UUiY5z1lG3VMAvvYtIzI0vT-MdYXbMMI","app_key":"Fg2G2T8xMY2kHrJcsgnP8fQL","server_url":"","path":"window.location.pathname","ignore_local":true},"gtag":"G-YXQLEHXNL8"},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"blog.catoverload.dev","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-YXQLEHXNL8","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"0UUiY5z1lG3VMAvvYtIzI0vT-MdYXbMMI","app_key":"Fg2G2T8xMY2kHrJcsgnP8fQL","server_url":"","path":"window.location.pathname","ignore_local":true},"gtag":null},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -88,6 +88,20 @@
 
   
 
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
   
 
   
@@ -331,10 +345,14 @@
             
               <div class="markdown-body">
                 
-                <h1 id="No-5-最長回文子字串"><a href="#No-5-最長回文子字串" class="headerlink" title="No. 5 最長回文子字串"></a>No. 5 最長回文子字串</h1><p>Given a string s, return the longest palindromic substring in s.<br>題目<a target="_blank" rel="noopener" href="https://leetcode.com/problems/longest-palindromic-substring/description/">在這裡</a></p>
-<p>Chat GPT提供了Manacher’s Algorithm的演算法<br>這個演算法解決了偶數字串裏沒有中間數值的問題。</p>
+                <h1>No. 5 最長回文子字串</h1>
+<p>Given a string s, return the longest palindromic substring in s.<br>
+題目<a target="_blank" rel="noopener" href="https://leetcode.com/problems/longest-palindromic-substring/description/">在這裡</a></p>
+<p>Chat GPT提供了Manacher’s Algorithm的演算法<br>
+這個演算法解決了偶數字串裏沒有中間數值的問題。</p>
 <p><code>Problem:</code>有不一樣數值的問題可以用新增空位元來處理？</p>
-<p>詳細的介紹看這個<a target="_blank" rel="noopener" href="https://medium.com/hoskiss-stand/manacher-299cf75db97e">網站</a>，他也有參考國外的網站，想看原文的也可以去看，我就不貼了自己去點他的網站找<br>Chat GPT 寫的程式:</p>
+<p>詳細的介紹看這個<a target="_blank" rel="noopener" href="https://medium.com/hoskiss-stand/manacher-299cf75db97e">網站</a>，他也有參考國外的網站，想看原文的也可以去看，我就不貼了自己去點他的網站找<br>
+Chat GPT 寫的程式:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">string <span class="hljs-title">longestPalindrome</span><span class="hljs-params">(string s)</span> </span>&#123;<br>        string t = <span class="hljs-built_in">preProcess</span>(s);<br>        <span class="hljs-type">int</span> n = t.<span class="hljs-built_in">length</span>(), center = <span class="hljs-number">0</span>, right = <span class="hljs-number">0</span>, start = <span class="hljs-number">0</span>, max_len = <span class="hljs-number">1</span>;<br>        <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">p</span><span class="hljs-params">(n)</span></span>;<br><br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>            <span class="hljs-keyword">if</span> (i &lt; right) p[i] = <span class="hljs-built_in">min</span>(right - i, p[<span class="hljs-number">2</span> * center - i]);<br>            <span class="hljs-keyword">while</span> (t[i + p[i] + <span class="hljs-number">1</span>] == t[i - p[i] - <span class="hljs-number">1</span>]) p[i]++;<br>            <span class="hljs-keyword">if</span> (i + p[i] &gt; right) center = i, right = i + p[i];<br>            <span class="hljs-keyword">if</span> (p[i] &gt; max_len) max_len = p[i], start = (i - p[i]) / <span class="hljs-number">2</span>;<br>        &#125;<br><br>        <span class="hljs-keyword">return</span> s.<span class="hljs-built_in">substr</span>(start, max_len);<br>    &#125;<br><br><span class="hljs-keyword">private</span>:<br>    <span class="hljs-function">string <span class="hljs-title">preProcess</span><span class="hljs-params">(string s)</span> </span>&#123;<br>        <span class="hljs-type">int</span> n = s.<span class="hljs-built_in">length</span>();<br>        <span class="hljs-keyword">if</span> (n == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;^$&quot;</span>;<br>        string ret = <span class="hljs-string">&quot;^&quot;</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) ret += <span class="hljs-string">&quot;#&quot;</span> + s.<span class="hljs-built_in">substr</span>(i, <span class="hljs-number">1</span>);<br>        <span class="hljs-keyword">return</span> ret + <span class="hljs-string">&quot;#$&quot;</span>;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
                 
               </div>

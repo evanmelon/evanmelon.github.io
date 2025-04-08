@@ -66,7 +66,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"blog.catoverload.dev","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"0UUiY5z1lG3VMAvvYtIzI0vT-MdYXbMMI","app_key":"Fg2G2T8xMY2kHrJcsgnP8fQL","server_url":"","path":"window.location.pathname","ignore_local":true},"gtag":"G-YXQLEHXNL8"},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"blog.catoverload.dev","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-YXQLEHXNL8","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"0UUiY5z1lG3VMAvvYtIzI0vT-MdYXbMMI","app_key":"Fg2G2T8xMY2kHrJcsgnP8fQL","server_url":"","path":"window.location.pathname","ignore_local":true},"gtag":null},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -79,6 +79,20 @@
 
   
 
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
   
 
   
@@ -232,7 +246,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/cover.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -274,6 +288,90 @@
     
     
       <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2025/04/08/iql/" target="_self">
+          <img src="/img/default.png" srcset="/img/loading.gif" lazyload alt="IQL 介紹">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/08/iql/" target="_self">
+          IQL 介紹
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2025/04/08/iql/" target="_self">
+        <div>
+          這個文章會簡單介紹 IQL 這篇論文在做什麼。              論文標題: Offline Reinforcement Learning with Implicit Q-Learning作者: Ilya Kostrikov, Ashvin Nair &amp; Sergey Levine發表年份: 2021            這篇論文在幹嘛？ 這篇是一個 offline 的 rei
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-08 11:19" pubdate>
+              2025-04-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Machine-Learning/" class="category-chain-item">Machine Learning</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Machine-Learning/Reinforcement-Learning/" class="category-chain-item">Reinforcement Learning</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Offline-RL/">#Offline RL</a>
+            
+              <a href="/tags/Implicit-Q-Learning/">#Implicit Q-Learning</a>
+            
+              <a href="/tags/IQL/">#IQL</a>
+            
+              <a href="/tags/Expectile-Regression/">#Expectile Regression</a>
+            
+              <a href="/tags/Temporal-Difference-Learning/">#Temporal Difference Learning</a>
+            
+              <a href="/tags/Q-Learning/">#Q-Learning</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2024/03/16/package-hexo/" target="_self">
           <img src="/img/package_hexo/cover.png" srcset="/img/loading.gif" lazyload alt="Package Your Hexo">
         </a>
@@ -290,7 +388,7 @@
       
       <a class="index-excerpt " href="/2024/03/16/package-hexo/" target="_self">
         <div>
-          打包你的Hexo如果你有多部電腦共同使用，那這篇文章就可以教你如何用 github 在不同裝置上修改撰寫您的 hexo。這篇文章有教學要如何使用原本 hexo 部署到 github 的 repository，利用他的 branch 來存檔案。但我覺得這有些微的混亂，因此我認為新增一個 repository 也是個好方法。 部署到新的repository因為 hexo 在 init 時所產生的
+          打包你的Hexo 如果你有多部電腦共同使用，那這篇文章就可以教你如何用 github 在不同裝置上修改撰寫您的 hexo。 這篇文章有教學要如何使用原本 hexo 部署到 github 的 repository，利用他的 branch 來存檔案。但我覺得這有些微的混亂，因此我認為新增一個 repository 也是個好方法。 部署到新的repository 因為 hexo 在 init 時所產
         </div>
       </a>
 

@@ -16,12 +16,12 @@
   <meta name="author" content="Evan Chang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="不管你多會寫程式，第一個步驟一定是建置環境，但不同的系統各自都有相對應的安裝方式，換個系統又必須要重新查方法安裝。但其實有個方法可以讓你省去這個麻煩，那就是Docker！ DockerDocker是一個以應用程式為中心的虛擬環境。建置一個小小的linux系統(其實要哪個系統都可以，有支援就好，不然就自己做)在這個小電腦上跑你想要的任何東西。 Docker跑程式一開始我爸跟我說這個東西時我認為它離">
+    <meta name="description" content="不管你多會寫程式，第一個步驟一定是建置環境，但不同的系統各自都有相對應的安裝方式，換個系統又必須要重新查方法安裝。但其實有個方法可以讓你省去這個麻煩，那就是Docker！ Docker Docker是一個以應用程式為中心的虛擬環境。建置一個小小的linux系統(其實要哪個系統都可以，有支援就好，不然就自己做)在這個小電腦上跑你想要的任何東西。 Docker跑程式 一開始我爸跟我說這個東西時我認為">
 <meta property="og:type" content="article">
 <meta property="og:title" content="寫程式的新方法">
 <meta property="og:url" content="https://blog.catoverload.dev/2023/03/07/dockerIntro/index.html">
 <meta property="og:site_name" content="Evan 的 Blog">
-<meta property="og:description" content="不管你多會寫程式，第一個步驟一定是建置環境，但不同的系統各自都有相對應的安裝方式，換個系統又必須要重新查方法安裝。但其實有個方法可以讓你省去這個麻煩，那就是Docker！ DockerDocker是一個以應用程式為中心的虛擬環境。建置一個小小的linux系統(其實要哪個系統都可以，有支援就好，不然就自己做)在這個小電腦上跑你想要的任何東西。 Docker跑程式一開始我爸跟我說這個東西時我認為它離">
+<meta property="og:description" content="不管你多會寫程式，第一個步驟一定是建置環境，但不同的系統各自都有相對應的安裝方式，換個系統又必須要重新查方法安裝。但其實有個方法可以讓你省去這個麻煩，那就是Docker！ Docker Docker是一個以應用程式為中心的虛擬環境。建置一個小小的linux系統(其實要哪個系統都可以，有支援就好，不然就自己做)在這個小電腦上跑你想要的任何東西。 Docker跑程式 一開始我爸跟我說這個東西時我認為">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://blog.catoverload.dev/2023/03/07/dockerIntro/img/icon/pet_foot_print_DarkBlue.png">
 <meta property="article:published_time" content="2023-03-07T08:57:20.000Z">
@@ -76,7 +76,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"blog.catoverload.dev","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"0UUiY5z1lG3VMAvvYtIzI0vT-MdYXbMMI","app_key":"Fg2G2T8xMY2kHrJcsgnP8fQL","server_url":"","path":"window.location.pathname","ignore_local":true},"gtag":"G-YXQLEHXNL8"},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"blog.catoverload.dev","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-YXQLEHXNL8","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"0UUiY5z1lG3VMAvvYtIzI0vT-MdYXbMMI","app_key":"Fg2G2T8xMY2kHrJcsgnP8fQL","server_url":"","path":"window.location.pathname","ignore_local":true},"gtag":null},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -89,6 +89,20 @@
 
   
 
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
   
 
   
@@ -334,15 +348,26 @@
                 
                 <script src="/js/dateUp.js"></script>
 <p>不管你多會寫程式，第一個步驟一定是建置環境，但不同的系統各自都有相對應的安裝方式，換個系統又必須要重新查方法安裝。但其實有個方法可以讓你省去這個麻煩，那就是Docker！</p>
-<h2 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h2><p>Docker是一個以應用程式為中心的虛擬環境。建置一個小小的linux系統(其實要哪個系統都可以，有支援就好，不然就自己做)在這個小電腦上跑你想要的任何東西。</p>
-<h2 id="Docker跑程式"><a href="#Docker跑程式" class="headerlink" title="Docker跑程式"></a>Docker跑程式</h2><p>一開始我爸跟我說這個東西時我認為它離我太遠，因為第一個想到的用法是</p>
+<h2 id="Docker">Docker</h2>
+<p>Docker是一個以應用程式為中心的虛擬環境。建置一個小小的linux系統(其實要哪個系統都可以，有支援就好，不然就自己做)在這個小電腦上跑你想要的任何東西。</p>
+<h2 id="Docker跑程式">Docker跑程式</h2>
+<p>一開始我爸跟我說這個東西時我認為它離我太遠，因為第一個想到的用法是</p>
 <ul>
 <li>在公司裡大專案的開發需要一個穩定的環境，建置的過程過於繁雜，想換電腦開發又要花一大堆時間建置環境，所以用Docker的image紀錄好環境，以後想在其他電腦開發時才可以一整個環境直接複製貼上。</li>
 </ul>
-<p>但買了一個只有固態硬碟512GB的小電腦後，(跟桌機的2TB相比差太多了)開始想要怎麼才能控制好硬碟的空間，不想裝了一堆怪東西又不知道在哪裡。這時才想到原來Docker可以幫忙做到這件事。<br>查了網路才知道原來早就有人發現這個用法。而且microsoft有提供image。</p>
-<h2 id="VScode"><a href="#VScode" class="headerlink" title="VScode"></a>VScode</h2><p><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10277952">這裡</a>有完整的教學。<br>我一開始點左下角那個按鈕也跟那個網站顯示的一樣<br><img src="/img/dockerIntro/%E7%B6%B2%E8%B7%AF%E4%B8%8A%E7%9A%84%E6%8C%89%E9%88%95.png" srcset="/img/loading.gif" lazyload alt="網站的照片"><br>但用兩三天後就變這樣了<br><img src="/img/dockerIntro/%E8%87%AA%E5%B7%B1%E7%9A%84%E6%8C%89%E9%88%95.jpg" srcset="/img/loading.gif" lazyload alt="我自己的截圖"><br>可能他以為我不需要了但我還沒全部試過…</p>
-<p>如果不懂Docker的話可以想成按下Add Development Container Configuration Files… 產生的檔案就是個設定檔，裡面提供了Docker需要知道的安裝項目，像是Image的檔案(好像都是microsoft做的)要取哪pull，可以看他寫的註解應該就會瞭解了，但我沒完全看懂，我只看懂postCreateCommand是用來打安裝好Container後要打的指令。<br><img src="/img/dockerIntro/devcontainer%E6%AA%94%E6%A1%88%E8%A7%A3%E9%87%8B.png" srcset="/img/loading.gif" lazyload alt="介紹devcontainer.json"></p>
-<h2 id="小問題"><a href="#小問題" class="headerlink" title="小問題"></a>小問題</h2><p>開啟Docker Desktop後windows和mac都會出現一個像是虛擬機的程式在後台執行，windows叫VMMEM，mac叫Virtual Machine Service。一開始windows的VMMEM會佔用大量的記憶體，mac也是，但windows久了VMMEM就會慢慢降下來只剩700MB(跟chrome用的差不多)，但mac的記憶體用量就不會下降了。如果有人懂這個東西是什麼的話可以在評論區告訴我。<del>(但那個評論系統好像不會寄Email給我，所以我可能很晚才會看到)</del>評論系統已完成寄信功能。</p>
+<p>但買了一個只有固態硬碟512GB的小電腦後，(跟桌機的2TB相比差太多了)開始想要怎麼才能控制好硬碟的空間，不想裝了一堆怪東西又不知道在哪裡。這時才想到原來Docker可以幫忙做到這件事。<br>
+查了網路才知道原來早就有人發現這個用法。而且microsoft有提供image。</p>
+<h2 id="VScode">VScode</h2>
+<p><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10277952">這裡</a>有完整的教學。<br>
+我一開始點左下角那個按鈕也跟那個網站顯示的一樣<br>
+<img src="/img/dockerIntro/%E7%B6%B2%E8%B7%AF%E4%B8%8A%E7%9A%84%E6%8C%89%E9%88%95.png" srcset="/img/loading.gif" lazyload alt="網站的照片"><br>
+但用兩三天後就變這樣了<br>
+<img src="/img/dockerIntro/%E8%87%AA%E5%B7%B1%E7%9A%84%E6%8C%89%E9%88%95.jpg" srcset="/img/loading.gif" lazyload alt="我自己的截圖"><br>
+可能他以為我不需要了但我還沒全部試過…</p>
+<p>如果不懂Docker的話可以想成按下Add Development Container Configuration Files… 產生的檔案就是個設定檔，裡面提供了Docker需要知道的安裝項目，像是Image的檔案(好像都是microsoft做的)要取哪pull，可以看他寫的註解應該就會瞭解了，但我沒完全看懂，我只看懂postCreateCommand是用來打安裝好Container後要打的指令。<br>
+<img src="/img/dockerIntro/devcontainer%E6%AA%94%E6%A1%88%E8%A7%A3%E9%87%8B.png" srcset="/img/loading.gif" lazyload alt="介紹devcontainer.json"></p>
+<h2 id="小問題">小問題</h2>
+<p>開啟Docker Desktop後windows和mac都會出現一個像是虛擬機的程式在後台執行，windows叫VMMEM，mac叫Virtual Machine Service。一開始windows的VMMEM會佔用大量的記憶體，mac也是，但windows久了VMMEM就會慢慢降下來只剩700MB(跟chrome用的差不多)，但mac的記憶體用量就不會下降了。如果有人懂這個東西是什麼的話可以在評論區告訴我。~~(但那個評論系統好像不會寄Email給我，所以我可能很晚才會看到)~~評論系統已完成寄信功能。</p>
 
                 
               </div>

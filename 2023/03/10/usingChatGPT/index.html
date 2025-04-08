@@ -16,12 +16,12 @@
   <meta name="author" content="Evan Chang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="使用ChatGPT             此次做法是使用OpenAI提供的免費試用期，期限到了就只能花錢續約了。             在ChatGPT的風潮下，大家都想用他幫我們完成特定的事情。但每次都要上他的網站去查也太慢了吧。其實有個方法可以讓ChatGPT出現在你想要的任何地方，那就是使用OpenAI提供的api！最近OpenAI開放了使用在ChatGPT的模型(以前是用類似的模型t">
+    <meta name="description" content="使用ChatGPT              此次做法是使用OpenAI提供的免費試用期，期限到了就只能花錢續約了。            在ChatGPT的風潮下，大家都想用他幫我們完成特定的事情。 但每次都要上他的網站去查也太慢了吧。 其實有個方法可以讓ChatGPT出現在你想要的任何地方，那就是使用OpenAI提供的api！ 最近OpenAI開放了使用在ChatGPT的模型(以前是用類似的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用ChatGPT">
 <meta property="og:url" content="https://blog.catoverload.dev/2023/03/10/usingChatGPT/index.html">
 <meta property="og:site_name" content="Evan 的 Blog">
-<meta property="og:description" content="使用ChatGPT             此次做法是使用OpenAI提供的免費試用期，期限到了就只能花錢續約了。             在ChatGPT的風潮下，大家都想用他幫我們完成特定的事情。但每次都要上他的網站去查也太慢了吧。其實有個方法可以讓ChatGPT出現在你想要的任何地方，那就是使用OpenAI提供的api！最近OpenAI開放了使用在ChatGPT的模型(以前是用類似的模型t">
+<meta property="og:description" content="使用ChatGPT              此次做法是使用OpenAI提供的免費試用期，期限到了就只能花錢續約了。            在ChatGPT的風潮下，大家都想用他幫我們完成特定的事情。 但每次都要上他的網站去查也太慢了吧。 其實有個方法可以讓ChatGPT出現在你想要的任何地方，那就是使用OpenAI提供的api！ 最近OpenAI開放了使用在ChatGPT的模型(以前是用類似的">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://blog.catoverload.dev/2023/03/10/usingChatGPT/img/icon/pet_foot_print_DarkBlue.png">
 <meta property="article:published_time" content="2023-03-10T09:01:19.000Z">
@@ -76,7 +76,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"blog.catoverload.dev","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"0UUiY5z1lG3VMAvvYtIzI0vT-MdYXbMMI","app_key":"Fg2G2T8xMY2kHrJcsgnP8fQL","server_url":"","path":"window.location.pathname","ignore_local":true},"gtag":"G-YXQLEHXNL8"},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"blog.catoverload.dev","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-YXQLEHXNL8","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"0UUiY5z1lG3VMAvvYtIzI0vT-MdYXbMMI","app_key":"Fg2G2T8xMY2kHrJcsgnP8fQL","server_url":"","path":"window.location.pathname","ignore_local":true},"gtag":null},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -89,6 +89,20 @@
 
   
 
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
   
 
   
@@ -333,22 +347,36 @@
               <div class="markdown-body">
                 
                 <script src="/js/dateUp.js"></script>
-<h1 id="使用ChatGPT"><a href="#使用ChatGPT" class="headerlink" title="使用ChatGPT"></a>使用ChatGPT</h1><div class="note note-warning">
+<h1>使用ChatGPT</h1>
+<div class="note note-warning">
             <p>此次做法是使用OpenAI提供的免費試用期，期限到了就只能花錢續約了。</p>
           </div>
-
-<p>在ChatGPT的風潮下，大家都想用他幫我們完成特定的事情。<br>但每次都要上他的網站去查也太慢了吧。<br>其實有個方法可以讓ChatGPT出現在你想要的任何地方，那就是使用OpenAI提供的api！<br>最近OpenAI開放了使用在ChatGPT的模型(以前是用類似的模型text-davinci-003，但我問過這個模型他說他不是ChatGPT在用的模型)<br>這次他真的來了！<br>ChatGPT真正在使用的模型是叫做<code>gpt-3.5-turbo</code>，詳細的內容可以參考OpenAI的<a target="_blank" rel="noopener" href="https://platform.openai.com/">網站</a></p>
-<h3 id="如何使用API"><a href="#如何使用API" class="headerlink" title="如何使用API"></a>如何使用API</h3><p>會用api的人應該就直接去看他的網站就能瞭解了，網站都寫得蠻清楚的。但我還是在這裡整理那個網站的內容。</p>
-<h2 id="API-Key"><a href="#API-Key" class="headerlink" title="API Key"></a>API Key</h2><p>使用api要先取得他們的key</p>
+<p>在ChatGPT的風潮下，大家都想用他幫我們完成特定的事情。<br>
+但每次都要上他的網站去查也太慢了吧。<br>
+其實有個方法可以讓ChatGPT出現在你想要的任何地方，那就是使用OpenAI提供的api！<br>
+最近OpenAI開放了使用在ChatGPT的模型(以前是用類似的模型text-davinci-003，但我問過這個模型他說他不是ChatGPT在用的模型)<br>
+這次他真的來了！<br>
+ChatGPT真正在使用的模型是叫做<code>gpt-3.5-turbo</code>，詳細的內容可以參考OpenAI的<a target="_blank" rel="noopener" href="https://platform.openai.com">網站</a></p>
+<h3 id="如何使用API">如何使用API</h3>
+<p>會用api的人應該就直接去看他的網站就能瞭解了，網站都寫得蠻清楚的。但我還是在這裡整理那個網站的內容。</p>
+<h2 id="API-Key">API Key</h2>
+<p>使用api要先取得他們的key</p>
 <ol>
 <li>首先要先註冊帳號，<a target="_blank" rel="noopener" href="https://openai.com/blog/openai-api">點這裡</a>在網頁的中間有個sign up的小按鈕(不是在熟悉的右上角)，登入需要email和手機號碼<img src="/img/chatGPTapi/apiHomePage.png" srcset="/img/loading.gif" lazyload alt="網站的照片"></li>
 <li>註冊好後點右上角自己的頭像然後按Manage account可以進入個人帳號設定頁面。進去後左邊那一排點下API Keys 接下來就可以生成API Key了。生成後請馬上記下來，因為不允許再次查看，不然就等等要寫程式碼的時候再生成。忘記了也沒關係可以再生成一個。</li>
 </ol>
-<h2 id="python時間"><a href="#python時間" class="headerlink" title="python時間"></a>python時間</h2><p>在<a target="_blank" rel="noopener" href="https://platform.openai.com/">同個網站</a>中上面那欄點選<code>Documentation</code>，左邊在GUIDES下面點Chat completion，裡面解釋了python程式如何運作。<br><img src="/img/chatGPTapi/documentForChat.png" srcset="/img/loading.gif" lazyload alt="Chat completion"><br>你會看到需要import openai，要import當然要install，因此點選左邊那欄GET STARTED下的Libraries第一個出現的就是python 如何install openai，就是我下面打的這行。</p>
+<h2 id="python時間">python時間</h2>
+<p>在<a target="_blank" rel="noopener" href="https://platform.openai.com">同個網站</a>中上面那欄點選<code>Documentation</code>，左邊在GUIDES下面點Chat completion，裡面解釋了python程式如何運作。<br>
+<img src="/img/chatGPTapi/documentForChat.png" srcset="/img/loading.gif" lazyload alt="Chat completion"><br>
+你會看到需要import openai，要import當然要install，因此點選左邊那欄GET STARTED下的Libraries第一個出現的就是python 如何install openai，就是我下面打的這行。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pip install openai<br></code></pre></td></tr></table></figure>
-<p><img src="/img/chatGPTapi/installFromPython.png" srcset="/img/loading.gif" lazyload alt="install"><br>接下來就是實作的部分了，回到Chat completion的頁面裡，他提供的只是一次性的回覆，回覆並不會產生連續性。<br>以下提供生成連續性回覆的方法(我自己寫的可能有點爛)</p>
+<p><img src="/img/chatGPTapi/installFromPython.png" srcset="/img/loading.gif" lazyload alt="install"><br>
+接下來就是實作的部分了，回到Chat completion的頁面裡，他提供的只是一次性的回覆，回覆並不會產生連續性。<br>
+以下提供生成連續性回覆的方法(我自己寫的可能有點爛)</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> openai<br>openai.api_key = <span class="hljs-string">&quot;寫你剛剛生成的API Key&quot;</span><br><br>messages=[<br>        &#123;<span class="hljs-string">&quot;role&quot;</span>: <span class="hljs-string">&quot;system&quot;</span>, <span class="hljs-string">&quot;content&quot;</span>: <span class="hljs-string">&quot;You are a helpful assistant.&quot;</span>&#125;<br>    ]<br><br><span class="hljs-keyword">while</span>(<span class="hljs-literal">True</span>):<br>    ans = <span class="hljs-built_in">input</span>()<br>    messages.append(&#123;<span class="hljs-string">&quot;role&quot;</span>: <span class="hljs-string">&quot;user&quot;</span>, <span class="hljs-string">&quot;content&quot;</span>: ans&#125;)<br>    response = openai.ChatCompletion.create(<br>        model=<span class="hljs-string">&quot;gpt-3.5-turbo&quot;</span>,<br>        messages=messages<br>    )<br>    res = response[<span class="hljs-string">&quot;choices&quot;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&quot;message&quot;</span>][<span class="hljs-string">&quot;content&quot;</span>]<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&#x27;\n<span class="hljs-subst">&#123;res&#125;</span>\n&#x27;</span>)<br>    messages.append(&#123;<span class="hljs-string">&quot;role&quot;</span>: <span class="hljs-string">&quot;assistant&quot;</span>, <span class="hljs-string">&quot;content&quot;</span>: res&#125;)<br>    <span class="hljs-comment"># print(response[&quot;usage&quot;][&quot;total_tokens&quot;])</span><br></code></pre></td></tr></table></figure>
-<p>最下面那行註解是顯示你在這次的回覆中總共用了多少tokens，token是用來計算你對於這個api的使用量，OpenAI會依照這個數據跟你收取費用。但剛創的新帳號會給你18元美金並且使用大概3~4個月。<br>下面就是我做的範例。(藍色底線是我打的，其他都是AI的回應)<br><img src="/img/chatGPTapi/demoChat.png" srcset="/img/loading.gif" lazyload alt="Demo"></p>
+<p>最下面那行註解是顯示你在這次的回覆中總共用了多少tokens，token是用來計算你對於這個api的使用量，OpenAI會依照這個數據跟你收取費用。但剛創的新帳號會給你18元美金並且使用大概3~4個月。<br>
+下面就是我做的範例。(藍色底線是我打的，其他都是AI的回應)<br>
+<img src="/img/chatGPTapi/demoChat.png" srcset="/img/loading.gif" lazyload alt="Demo"></p>
 
                 
               </div>
