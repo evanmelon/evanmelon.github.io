@@ -4,6 +4,39 @@
   
   
   <entry>
+    <title>Squarespace</title>
+    <link href="/2025/04/08/googledomains2squarespace/"/>
+    <url>/2025/04/08/googledomains2squarespace/</url>
+    
+    <content type="html"><![CDATA[<script src="/js/dateUp.js"></script><div class="note note-info">            <p>摘要：<br>Google Domains 的所有網域客戶被 Squarespace 買下來了。注意，是 Google Domains 不是 Google，他只是 Google 其中一個產品。</p>          </div><p>有沒有收到過一篇 Squarespace 發給你的 email？如果你有用 Google Domains 買網域的話不要緊張你什麼事都不用做，這是因為 Squarespace 把 Google Domains 的所有網域客戶買下來了，如果你去<a href="https://domains.google/">Google Domains 的網站</a>看就可以看到解釋。上面寫 2023 年 6 月 15 日，Google 與 Squarespace 達成最終協議，表明他們打算從 Google Domains 購買所有網域註冊和相關客戶帳戶。截至 2024 年 7 月 10 日，所有網域已遷移至 Squarespace，所有 Google Domains 用戶都成為了 Squarespace 的客戶。</p><p><a href="https://support.squarespace.com/hc/en-us/articles/17131164996365-About-the-Google-Domains-migration-to-Squarespace#:~:text=Will%20the%20cost,domains%20dashboard.">這邊寫到</a>，自 2024 年 9 月 7 日起，所有遷移的網域均以我們的標準費率續約。但依照我自己的經驗，原本購買的網域價錢目前還沒變更，是維持原先我在 Google Domains 購買的價格，像我之前的 .dev 網站只要 NT$350，現在還是跟我收 NT$350，也許明年就變成他網站上的價格了。</p><p>目前 (2025/04) 一般網域的價格是 NT$660，比 Godaddy 的原價還便宜，所以還在猶豫要用哪家的你可以來了解一下 Squarespace 適不適合你！<br><img src="/img/googledomains2squarespace/godaddy.png" alt="godaddy 網域價格 (2025/04)"><br><img src="/img/googledomains2squarespace/squarespace.png" alt="squarespace 網域價格 (2025/04)"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技術筆記</category>
+      
+      <category>網域</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Google Domains</tag>
+      
+      <tag>Squarespace</tag>
+      
+      <tag>domain registrar</tag>
+      
+      <tag>Godaddy</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>IQL 介紹</title>
     <link href="/2025/04/08/iql/"/>
     <url>/2025/04/08/iql/</url>
@@ -49,6 +82,8 @@
     
     
     <categories>
+      
+      <category>技術筆記</category>
       
       <category>Hexo</category>
       

@@ -6,7 +6,7 @@
   <link href="https://blog.catoverload.dev/atom.xml" rel="self"/>
   
   <link href="https://blog.catoverload.dev/"/>
-  <updated>2025-04-08T12:46:52.482Z</updated>
+  <updated>2025-04-08T14:56:17.621Z</updated>
   <id>https://blog.catoverload.dev/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Squarespace</title>
+    <link href="https://blog.catoverload.dev/2025/04/08/googledomains2squarespace/"/>
+    <id>https://blog.catoverload.dev/2025/04/08/googledomains2squarespace/</id>
+    <published>2025-04-08T22:37:16.000Z</published>
+    <updated>2025-04-08T14:56:17.621Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/js/dateUp.js"></script><div class="note note-info">            <p>摘要：<br>Google Domains 的所有網域客戶被 Squarespace 買下來了。注意，是 Google Domains 不是 Google，他只是 Google 其中一個產品。</p>          </div><p>有沒有收到過一篇 Squarespace 發給你的 email？如果你有用 Google Domains 買網域的話不要緊張你什麼事都不用做，這是因為 Squarespace 把 Google Domains 的所有網域客戶買下來了，如果你去<a href="https://domains.google/">Google Domains 的網站</a>看就可以看到解釋。上面寫 2023 年 6 月 15 日，Google 與 Squarespace 達成最終協議，表明他們打算從 Google Domains 購買所有網域註冊和相關客戶帳戶。截至 2024 年 7 月 10 日，所有網域已遷移至 Squarespace，所有 Google Domains 用戶都成為了 Squarespace 的客戶。</p><p><a href="https://support.squarespace.com/hc/en-us/articles/17131164996365-About-the-Google-Domains-migration-to-Squarespace#:~:text=Will%20the%20cost,domains%20dashboard.">這邊寫到</a>，自 2024 年 9 月 7 日起，所有遷移的網域均以我們的標準費率續約。但依照我自己的經驗，原本購買的網域價錢目前還沒變更，是維持原先我在 Google Domains 購買的價格，像我之前的 .dev 網站只要 NT$350，現在還是跟我收 NT$350，也許明年就變成他網站上的價格了。</p><p>目前 (2025/04) 一般網域的價格是 NT$660，比 Godaddy 的原價還便宜，所以還在猶豫要用哪家的你可以來了解一下 Squarespace 適不適合你！<br><img src="/img/googledomains2squarespace/godaddy.png" alt="godaddy 網域價格 (2025/04)"><br><img src="/img/googledomains2squarespace/squarespace.png" alt="squarespace 網域價格 (2025/04)"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;script src=&quot;/js/dateUp.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;note note-info&quot;&gt;
+            &lt;p&gt;摘要：&lt;br&gt;Google Domains 的所有網域客戶被 Squarespace 買下來了。注意，是 Googl</summary>
+      
+    
+    
+    
+    <category term="技術筆記" scheme="https://blog.catoverload.dev/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/"/>
+    
+    <category term="網域" scheme="https://blog.catoverload.dev/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/%E7%B6%B2%E5%9F%9F/"/>
+    
+    
+    <category term="Google Domains" scheme="https://blog.catoverload.dev/tags/Google-Domains/"/>
+    
+    <category term="Squarespace" scheme="https://blog.catoverload.dev/tags/Squarespace/"/>
+    
+    <category term="domain registrar" scheme="https://blog.catoverload.dev/tags/domain-registrar/"/>
+    
+    <category term="Godaddy" scheme="https://blog.catoverload.dev/tags/Godaddy/"/>
+    
+  </entry>
   
   <entry>
     <title>IQL 介紹</title>
@@ -60,7 +94,7 @@
     <link href="https://blog.catoverload.dev/2024/03/16/package-hexo/"/>
     <id>https://blog.catoverload.dev/2024/03/16/package-hexo/</id>
     <published>2024-03-16T04:43:15.000Z</published>
-    <updated>2025-04-07T17:09:02.866Z</updated>
+    <updated>2025-04-08T14:57:41.644Z</updated>
     
     <content type="html"><![CDATA[<!-- <script src="/js/modified.js"></script> --><script src="/js/dateUp.js"></script><h1>打包你的Hexo</h1><p>如果你有多部電腦共同使用，那這篇文章就可以教你如何用 github 在不同裝置上修改撰寫您的 hexo。<br><a href="https://blog.csdn.net/K1052176873/article/details/122879462">這篇文章</a>有教學要如何使用原本 hexo 部署到 github 的 repository，利用他的 branch 來存檔案。但我覺得這有些微的混亂，因此我認為新增一個 repository 也是個好方法。</p><h2 id="部署到新的repository">部署到新的repository</h2><p>因為 hexo 在 init 時所產生的 gitignore 正是我們需要的，所以步驟十分簡單，我們可以直接將整份 hexo 的資料夾 push 到 repository，就完成啦！</p><h2 id="新電腦的pull">新電腦的pull</h2><p>可以直接 pull 下來，那當然要先安裝好<a href="https://nodejs.org/">Node.js</a>和<a href="https://git-scm.com/">git</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-cli -g<br>npm install<br></code></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/K1052176873/article/details/122879462">那篇文章</a>也有提到其實 <code>npm install</code> 是去下載文件中的 package.json 這個檔案裡面的 dependencies 所列出的所有套件。</p><p>網站作者也有說要記住：不需要 <code>hexo init</code> 這個指令，不要打錯嘍！</p><p>這樣就完成啦！</p>]]></content>
     
@@ -75,7 +109,9 @@
     
     
     
-    <category term="Hexo" scheme="https://blog.catoverload.dev/categories/Hexo/"/>
+    <category term="技術筆記" scheme="https://blog.catoverload.dev/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/"/>
+    
+    <category term="Hexo" scheme="https://blog.catoverload.dev/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/Hexo/"/>
     
     
     <category term="hexo" scheme="https://blog.catoverload.dev/tags/hexo/"/>
