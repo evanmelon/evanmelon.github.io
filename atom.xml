@@ -34,6 +34,16 @@
     
     
     
+    <category term="技術筆記" scheme="https://blog.catoverload.dev/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/"/>
+    
+    <category term="Hexo" scheme="https://blog.catoverload.dev/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.catoverload.dev/tags/Hexo/"/>
+    
+    <category term="Fluid 主題" scheme="https://blog.catoverload.dev/tags/Fluid-%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="Google Analytics" scheme="https://blog.catoverload.dev/tags/Google-Analytics/"/>
     
   </entry>
   
