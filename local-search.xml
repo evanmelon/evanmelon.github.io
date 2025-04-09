@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>analytics error in fluid</title>
+    <link href="/2025/04/09/analytics-error-in-fluid/"/>
+    <url>/2025/04/09/analytics-error-in-fluid/</url>
+    
+    <content type="html"><![CDATA[<script src="/js/dateUp.js"></script><p>不知道各位在用 Hexo 配合 Fluid 的主題時有沒有遇到 google analytics 沒有反應的狀況。我目前是壞掉了，但我看 <a href="https://github.com/fluid-dev/hexo-theme-fluid/issues">Fluid 的 github issues</a> 好像也沒有人提到這件事，但我還是把我的方法寫下來，如果你也遇到跟我一樣的狀況，可以參考我的解決辦法。</p><h1>遇到的狀況</h1><p>之前我把 analytics 給我的 ID 填寫在下圖的 google: 那一行。</p><p><img src="/img/analytics-error-in-fluid/config.fluid.png" alt="_config.fluid.yml的檔案裡"></p><p>但在某次更新後突然 Analytics 收不到資料了，查了下發現我的網頁產生的程式碼有點問題。我的 ID 消失了？！原本應該在 <code>gtag('config', '');</code> 這行的第二個參數出現 Analytics 的 ID 但不知什麼原因消失了。</p><p><img src="/img/analytics-error-in-fluid/error_screenshot.png" alt="錯誤程式碼截圖"></p><p>如果你也遇到 Analytics 沒有收到資料的問題，可以去檢查一下這個部分的 ID 是不是也跟我一樣消失了，如果是那請繼續往下看，因為我找到方法自己寫上去了！</p><h1>解法</h1><p><a href="https://hexo.fluid-dev.com/posts/fluid-adsense/">這篇文章</a>是在講如何加上 google ads 的程式碼到網站上，我們就是要用它插入程式碼的方法去把 Analytics 需要的程式碼加進網站裡。</p><p>在你的程式碼中找到 <code>scripts</code> 的資料夾（如果沒有就創一個），創一個 <code>inject.js</code> 的文件，貼上下面的程式碼：</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs jsx">hexo.<span class="hljs-property">extend</span>.<span class="hljs-property">filter</span>.<span class="hljs-title function_">register</span>(<span class="hljs-string">&#x27;theme_inject&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">injects</span>) &#123;<br>injects.<span class="hljs-property">head</span>.<span class="hljs-title function_">raw</span>(<span class="hljs-string">&#x27;analytics&#x27;</span>, <span class="hljs-string">&#x27;&lt;!-- Google tag (gtag.js) --&gt;&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=你的帳號&quot;&gt;&lt;/script&gt;&lt;script&gt;window.dataLayer = window.dataLayer || [];function gtag()&#123;dataLayer.push(arguments);&#125;gtag(\&#x27;js\&#x27;, new Date());gtag(\&#x27;config\&#x27;, \&#x27;你的帳號\&#x27;);&lt;/script&gt;&#x27;</span>);<br>&#125;);<br></code></pre></td></tr></table></figure><p>這是我複製 Analytics 提供給我的程式碼做的一些修改，記得把裡面的中文改掉，把 <code>你的帳號</code> 都改成你自己 Analytics 的 ID（G-什麼的），有兩個地方要改。</p><p>這樣應該就順利解決啦～</p><h2 id="參考">參考</h2><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://github.com/fluid-dev/hexo-theme-fluid/issues">https://github.com/fluid-dev/hexo-theme-fluid/issues</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://hexo.fluid-dev.com/posts/fluid-adsense/">https://hexo.fluid-dev.com/posts/fluid-adsense/</a><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Squarespace</title>
     <link href="/2025/04/08/googledomains2squarespace/"/>
     <url>/2025/04/08/googledomains2squarespace/</url>
