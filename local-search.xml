@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>aerospace mac 的平鋪視窗管理器</title>
+    <link href="/2025/04/16/aerospace-intro/"/>
+    <url>/2025/04/16/aerospace-intro/</url>
+    
+    <content type="html"><![CDATA[<script src="/js/dateUp.js"></script><div class="note note-info">            <p>摘要：<br>介紹 aerospace，這是一個適用於 macOS 類似 i3 的 tiling window manager (平鋪式視窗管理員)。就是一個管理視窗顯示方式的工具。</p>          </div><h2 id="這工具適不適合你？">這工具適不適合你？</h2><p>當你每天在使用 mac 時是否覺得開了很多視窗後畫面變得很亂，甚至要找時也找了一陣子，點開很多 pdf 又變得很難找。你可以先試著按下 ctrl + 方向鍵下來顯示這個程式開啟的所有視窗，這是一種方法，你也可以使用很多個桌面來按照主題整理視窗，或是開啟幕前調度。但如果你覺得這些都需要用到滑鼠來操控有點慢，或是你在外面使用筆電時沒有滑鼠又不喜歡觸控板的操作方式，那這篇文章提供你另外一種方法，一個 linux 用戶也許會熟悉的視窗管理方法，tiling window manager！</p><p>其實也有人做<a href="https://www.youtube.com/watch?v=aeifzxaDOVo">影片</a>來去介紹說是否需要 Tiling window manager，他看起來是不需要，在影片的後半段也有說到如果你是一個在工作時需要開很多視窗的人，那這個工具會很適合你，但如果你工作或長期使用電腦時只開一個或兩個視窗，可能查查資料寫筆記之類的，那你可能就不太需要這項工具。我在看過他的影片後也想過這個問題，但我覺得還有一點我喜歡使用這個工具是我可以開很多個桌面決定我哪個桌面是做什麼事情，我也可以使用快捷鍵快速的切換到我想要的桌面，這是我想要的功能。</p><h2 id="介紹">介紹</h2><p>這個方法行之有年，在 linux 上最有名的是 i3 這個套件，這是在 X window 系統下的好用工具，如果是在 Wayland 系統的話也有個很有名的叫 Hyprland。他們設計的重點是讓你在開啟視窗時會把視窗平鋪在整個桌面，就是完整的攤開來，如果開了另一個視窗就會開始有規則的擺放，可以用快捷鍵來選取想要操控的視窗或是移動視窗。這樣帶來的好處就是讓你不再需要滑鼠去移動視窗，解放你的右手加入鍵盤的行列。還有一個更方便的功能是可以按下 home 鍵加上數字鍵將畫面切換到其他桌面，讓你輕鬆的管理哪個桌面是放音樂的地方，哪個桌面是開瀏覽器的地方，哪個桌面是工作的地方。只要按下快捷鍵就可以跳到你想要的桌面，是不是很方便呢！</p><p>那麼 mac 也有這種工具，但因為蘋果的產品通常安全要求比較高，所以會有很多限制。像是 <a href="https://github.com/koekeishiya/yabai">yabai</a> 這個 Tiling window manager 要使用全部的功能的話就需要開啟一個安全選項，當然你不想開也是可以使用，但某些功能會受到限制。但我這次要介紹的工具不需要解除這個安全選項。</p><h2 id="AeroSpace">AeroSpace</h2><p>照著<a href="https://github.com/nikitabobko/AeroSpace">這位老大哥</a>的<a href="https://nikitabobko.github.io/AeroSpace/guide#installation">安裝手冊</a>安裝好，複製他給的 config 檔後就可以直接使用，或是你要看我寫的步驟也可以。</p><h2 id="安裝步驟">安裝步驟</h2><p>以下指令請打開 Terminal 操作。</p><p>需要使用 <a href="https://brew.sh/">Homebrew</a> 安裝程式，如果沒裝過的幫我打這個指令安裝 Homebrew。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">/bin/bash -c <span class="hljs-string">&quot;<span class="hljs-subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span>&quot;</span><br></code></pre></td></tr></table></figure><p>使用 Homebrew 安裝程式，</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">brew install --cask nikitabobko/tap/aerospace<br></code></pre></td></tr></table></figure><p>在 <code>~/.config/areospace</code> 這個目錄放 config 檔案，下面這個指令是創建檔案夾。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">mkdir</span> -p ~/.config/areospace<br></code></pre></td></tr></table></figure><p><a href="https://nikitabobko.github.io/AeroSpace/config-examples/default-config.toml">下載檔案</a>後（請按連結）放置到剛剛生成的目錄 <code>~/.config/areospace</code> 。</p><p>完成了！</p><p>接下來就是好好的使用這個系統了！</p><h2 id="參考">參考</h2><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://www.youtube.com/watch?v=aeifzxaDOVo">https://www.youtube.com/watch?v=aeifzxaDOVo</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://github.com/koekeishiya/yabai">https://github.com/koekeishiya/yabai</a><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:3" class="footnote-text"><span><a href="https://github.com/nikitabobko/AeroSpace">https://github.com/nikitabobko/AeroSpace</a><a href="#fnref:3" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:4" class="footnote-text"><span><a href="https://brew.sh/">https://brew.sh/</a><a href="#fnref:4" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    <categories>
+      
+      <category>技術筆記</category>
+      
+      <category>macOS</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>AeroSpace</tag>
+      
+      <tag>Tiling Window Manager</tag>
+      
+      <tag>macOS</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>analytics error in fluid</title>
     <link href="/2025/04/09/analytics-error-in-fluid/"/>
     <url>/2025/04/09/analytics-error-in-fluid/</url>
