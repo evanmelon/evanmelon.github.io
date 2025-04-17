@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Codex CLI 介紹</title>
+    <link href="/2025/04/17/codex_cli-intro/"/>
+    <url>/2025/04/17/codex_cli-intro/</url>
+    
+    <content type="html"><![CDATA[<script src="/js/dateUp.js"></script><div class="note note-info">            <p>摘要：<br>openai 更新了 codex 現在變成 Codex CLI，一個專門為開發者製作的 command Line Interface。使用 Terminal 跟 Codex 互動，你用打字的， Codex 幫你更新你的 repo。但要 api key（要錢的，不是plus就可以用）。</p>          </div><h1>內文</h1><p>就在今天，OpenAI 在 Youtube 發佈了一個使用 Codex CLI 的<a href="https://youtu.be/FUq9qRwrDrI?si=meueNEf_cE7_qQlu">影片</a>。一位開發者和 Codex CLI 互動，讓 Codex 修改他正在開發的網頁，他就在 Terminal 打幾個字叫 Codex 讓網頁有深色模式，等個幾秒 Codex 就完成了他的修改，馬上他的網頁就有了深色模式。是不是很神奇呢！不知道能不能打敗 Cursor。如果你想使用的話你會需要有 OpenAI 的 API key ，但這就要付一點錢給 OpenAI 了，並不是你有訂閱 Plus 就有的功能。而且他現在好像變成你要先預付金額給 OpenAI 他才給你用，以前是可以自己設定金額上限然後過一個月再付，不知道什麼時候改成這樣了。可以先去他的 github 看他說的 <a href="https://github.com/openai/codex?tab=readme-ov-file#whycodex:~:text=your%20working%20directory.-,Why%C2%A0Codex%3F,-Codex%20CLI%20is">Why Codex?</a> 再來思考要不要使用。</p><h2 id="安裝步驟">安裝步驟</h2><p>其實看他的 github 就會發現安裝步驟很簡單，就一行指令。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g @openai/codex<br></code></pre></td></tr></table></figure><p>接下來設定好你的 API key，把your-api-key-here改成你的 API key。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">export</span> OPENAI_API_KEY=<span class="hljs-string">&quot;your-api-key-here&quot;</span><br></code></pre></td></tr></table></figure><p>接下來</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">codex<br></code></pre></td></tr></table></figure><p>就可以開始叫他幫你寫程式啦！</p><p>但如果你在一個不是 repository 的目錄啟動的話他會提醒你這可能會修改到你的檔案，看到這個訊息不要忽視他的警告，退出為上！</p><p><img src="/img/codex_cli-intro/warning.png" alt="Warning!!!"></p><h2 id="參考">參考</h2><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://youtu.be/FUq9qRwrDrI?si=meueNEf_cE7_qQlu">https://youtu.be/FUq9qRwrDrI?si=meueNEf_cE7_qQlu</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://github.com/openai/codex">https://github.com/openai/codex</a><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    <categories>
+      
+      <category>技術筆記</category>
+      
+      <category>AI 工具</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Codex CLI</tag>
+      
+      <tag>OpenAI</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>aerospace mac 的平鋪視窗管理器</title>
     <link href="/2025/04/16/aerospace-intro/"/>
     <url>/2025/04/16/aerospace-intro/</url>
