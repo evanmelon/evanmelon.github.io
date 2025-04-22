@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>mac preview 程式截圖透明背景</title>
+    <link href="/2025/04/22/mac-preview-trans-cap/"/>
+    <url>/2025/04/22/mac-preview-trans-cap/</url>
+    
+    <content type="html"><![CDATA[<script src="/js/dateUp.js"></script><div class="note note-info">            <p>摘要：<br>介紹一個截圖方法可以自動去掉背景，要使用 mac 的 Preview （預覽程式） 程式。</p>          </div><h1>內文</h1><p>當你需要報告論文給教授你一定要做 PPT 去報告你要講的論文，這時就你就會需要開始截圖圖片、表格、公式。當你貼到你精美的 PPT 版面時有時候會遇到圖片卡到背景的顏色了，變成了一個很醜的白色邊角。這時你不敢去放大圖片，這樣呈現的內容又變小了。</p><p>如果你遇到這個問題，這篇文章可以提供你自動去除背景的方法。但這個方法只限定使用 mac 的 Preview 程式。</p><h2 id="方法教學">方法教學</h2><p>在導航欄上有個叫工具的按鈕，選「矩形選取」，匡出你要截取的內容。然後按下 <code>cmd + c</code> 「複製」，再來按下 <code>cmd + n</code> 「使用剪貼板的內容新增檔案」，他就會跳出一個你選曲的範圍的內容，接著按下儲存存成 pdf 就好啦。以下是操作步驟：</p><ol><li>按下導航欄的「工具」選項</li><li>按下「矩形選取」</li><li>在內文中匡選你要的內容</li><li>按下 <code>cmd + c</code></li><li>按下 <code>cmd + n</code></li><li>儲存檔案，存成 pdf</li></ol><h2 id="效果呈現">效果呈現</h2><p><img src="/img/mac-preview-trans-cap/display.png" alt="PPT 截圖"><br>神奇的是當你在使用這個檔案像是貼到 PPT 時他是去除背景的狀態，但我也不知道他去除背景的設定是怎麼做的，有時候圖表裡也會變成透明的，不確定是否內容會消失，但應該不會吧？反正這張圖顯示的就是他可以辨識背景並去除，可能跟 pdf 在製作時提供的圖片本身有關，不確定這部分是怎麼設計的。</p><p>我覺得尤其方便的就是公式的擷取了！公式也可以做到去除背景的功能，這應該也可以理解因為他在 pdf 上就是文字而已，比圖片簡單許多。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技術筆記</category>
+      
+      <category>macOS</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>macOS</tag>
+      
+      <tag>Preview</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Codex CLI 介紹</title>
     <link href="/2025/04/17/codex_cli-intro/"/>
     <url>/2025/04/17/codex_cli-intro/</url>
